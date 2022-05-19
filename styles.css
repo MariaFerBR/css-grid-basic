@@ -1,4 +1,8 @@
-.container {
+.challenge-1 {
+    display: none;
+}
+
+.challenge-1 .container {
     display: grid;
     grid-template-rows: 200px 200px 200px;
     grid-auto-columns: 200px;
@@ -6,7 +10,7 @@
     gap: 20px;
 }
 
-.container .item {
+.challenge-1  .container .item {
     display: flex;
     font-size: 4rem;
     background-color: #B6DE01;
@@ -14,7 +18,7 @@
     justify-content: end;
 }
 
-.container .item p {
+.challenge-1 .container .item p {
     height: 60px;
     width: 60px;
     background-color: #2B8C01;
@@ -25,14 +29,72 @@
     font-weight: bold;
 }
 
-.container .item:nth-child(3n+2) {
+.challenge-1 .container .item:nth-child(3n+2) {
     background-color: #7CC301;
 }
 
-.container .item:nth-child(3n+3) {
+.challenge-1 .container .item:nth-child(3n+3) {
     background-color: #2A8D00;
 }
 
-.container .item:nth-child(3n+3) p {
+.challenge-1 .container .item:nth-child(3n+3) p {
     background-color: #103F01;
 }
+
+/* START STYLES CHALLENGE TWO */
+
+.challenge-2 .container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    gap: 40px;
+    background-color: #38621E;
+    place-content: center;
+    height: 500px;
+    width: 500px;
+}
+
+.challenge-2 .container .item {
+    display: grid;
+    place-items: end;
+    background-color: #A6D221;
+}
+
+.challenge-2 .container .item p {
+    width: 50px;
+    height: 70px;
+    background-color: #65A841;
+    margin: 0;
+}
+
+.challenge-2 .container .mini-box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #103F01;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+}
+
+/* FINISH STYLES CHALLENGE TWO */
+
+/* OTHER CLASS */
+/* .container {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:  150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+}
+
+.container .item {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
+
+.container {
+    place-content: center;
+} */
