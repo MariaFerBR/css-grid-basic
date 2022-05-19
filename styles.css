@@ -10,10 +10,10 @@
     gap: 20px;
 }
 
-.challenge-1  .container .item {
+.challenge-1 .container .item {
     display: flex;
     font-size: 4rem;
-    background-color: #B6DE01;
+    background-color: #b6de01;
     align-items: flex-end;
     justify-content: end;
 }
@@ -21,7 +21,7 @@
 .challenge-1 .container .item p {
     height: 60px;
     width: 60px;
-    background-color: #2B8C01;
+    background-color: #2b8c01;
     font-size: 3rem;
     text-align: center;
     margin: 0;
@@ -29,19 +29,22 @@
     font-weight: bold;
 }
 
-.challenge-1 .container .item:nth-child(3n+2) {
-    background-color: #7CC301;
+.challenge-1 .container .item:nth-child(3n + 2) {
+    background-color: #7cc301;
 }
 
-.challenge-1 .container .item:nth-child(3n+3) {
-    background-color: #2A8D00;
+.challenge-1 .container .item:nth-child(3n + 3) {
+    background-color: #2a8d00;
 }
 
-.challenge-1 .container .item:nth-child(3n+3) p {
-    background-color: #103F01;
+.challenge-1 .container .item:nth-child(3n + 3) p {
+    background-color: #103f01;
 }
 
 /* START STYLES CHALLENGE TWO */
+.challenge-2 {
+    display: none;
+}
 
 .challenge-2 .container {
     position: relative;
@@ -49,7 +52,7 @@
     grid-template-rows: 200px 200px;
     grid-template-columns: 200px 200px;
     gap: 40px;
-    background-color: #38621E;
+    background-color: #38621e;
     place-content: center;
     height: 500px;
     width: 500px;
@@ -58,13 +61,13 @@
 .challenge-2 .container .item {
     display: grid;
     place-items: end;
-    background-color: #A6D221;
+    background-color: #a6d221;
 }
 
 .challenge-2 .container .item p {
     width: 50px;
     height: 70px;
-    background-color: #65A841;
+    background-color: #65a841;
     margin: 0;
 }
 
@@ -72,7 +75,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: #103F01;
+    background-color: #103f01;
     left: calc(50% - 20px);
     top: calc(50% - 20px);
 }
@@ -80,21 +83,32 @@
 /* FINISH STYLES CHALLENGE TWO */
 
 /* OTHER CLASS */
-/* .container {
+.container {
+    border: 5px solid #e1bee7;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+
+.container .item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    font-size: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.container .item-2 {
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
-    display: grid;
-    gap: 15px;
-    grid-template-columns:  150px 150px 150px;
-    grid-auto-rows: 150px;
-    height: 600px;
-}
-
-.container .item {
-    border: 5px solid #00bcd4;
     font-size: 4rem;
+    grid-row: 2 / 4;
 }
 
-.container {
-    place-content: center;
-} */
+.container .item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    font-size: 4rem;
+    grid-area: 2 / 2 / 4 / 4;
+}
