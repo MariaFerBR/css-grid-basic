@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-auto-columns: 200px;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.container .item {
+    display: flex;
+    font-size: 4rem;
+    background-color: #B6DE01;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.container .item p {
+    height: 60px;
+    width: 60px;
+    background-color: #2B8C01;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.container .item:nth-child(3n+2) {
+    background-color: #7CC301;
+}
+
+.container .item:nth-child(3n+3) {
+    background-color: #2A8D00;
+}
+
+.container .item:nth-child(3n+3) p {
+    background-color: #103F01;
+}
