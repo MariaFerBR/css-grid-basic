@@ -2,45 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" />
     <title>CSS Grid Basic</title>
   </head>
   <body>
-    <div class="challenge-1">
-      <h2>CHALLENGE 1</h2>
-      <div class="container">
-          <div class="item"><p>1</p></div>
-          <div class="item"><p>2</p></div>
-          <div class="item"><p>3</p></div>
-          <div class="item"><p>4</p></div>
-          <div class="item"><p>5</p></div>
-          <div class="item"><p>6</p></div>
+    <main>
+      <section class="hero">
+        <div class="info">
+          <h1>
+            Check the <br />
+            best food
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            quis, cupiditate ducimus voluptatem reiciendis nam impedit libero
+            placeat iure eius autem, dolores eum ratione suscipit eos laborum
+            accusamus magnam voluptas!
+          </p>
+          <button>Book a table</button>
         </div>
-    </div>
-    <hr />
-    <div class="challenge-2">
-        <h2>CHALLENGE 2</h2>
-        <div class="container">
-          <div class="item item-1"><p></p></div>
-          <div class="item item-2"><p></p></div>
-          <div class="item item-3"><p></p></div>
-          <div class="item item-4"><p></p></div>
-          <div class="mini-box"></div>
+        <img
+          class="hero-image"
+          src="./images/hero.png"
+          alt="Plato de pasta con vegetales"
+        />
+      </section>
+
+      <section class="dishes">
+        <h2 class="dishes-title">Our services</h2>
+        <div class="dishes-grid">
+          <img
+            class="dishes-item dishes-item--big"
+            src="./images/video.png"
+            alt="Una mesa con platos de pasta"
+          />
+          <img
+            class="dishes-item"
+            src="./images/dish1.png"
+            alt="Plato de vegetales"
+          />
+          <img class="dishes-item" src="./images/dish2.png" alt="Huevos" />
+          <img class="dishes-item" src="./images/dish3.png" alt="Helado" />
+          <img class="dishes-item" src="./images/dish4.png" alt="Gourmet" />
         </div>
-    </div>
-    <hr />
-    <div class="challenge-3">
-        <h2>CHALLENGE 3</h2>
-        <div class="container">
-          <div class="item item-1"></div>
-          <div class="item item-2"></div>
-          <div class="item item-3"></div>
-          <div class="item item-4"></div>
-          <div class="item item-5"></div>
-          <div class="item item-6"></div>
-          <div class="item item-7"></div>
-          <div class="mini-box"></div>
+      </section>
+
+      <section class="menu">
+        <h2 class="menu__title">Home menu</h2>
+        <div class="menu__grid">
+          <div class="menu__grid-item">
+            <img src="./images/plate1.png" alt="Plato de pasta con salsa" />
+          </div>
+          <div class="menu__grid-item">
+            <img src="./images/plate2.png" alt="Plato de pasta con vegetales" />
+          </div>
+          <div class="menu__grid-item">
+            <img src="./images/plate3.png" alt="Plato de pasta tornillos" />
+          </div>
+          <div class="menu__grid-item">
+            <img src="./images/plate4.png" alt="Plato de pasta con aguacate" />
+          </div>
+          <div class="menu__grid-item">
+            <img src="./images/plate5.png" alt="Bowl de pasta" />
+          </div>
         </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
